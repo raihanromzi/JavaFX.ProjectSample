@@ -59,7 +59,7 @@ public class HelloApplication extends Application {
 
 //        Set Stage
         stage.setTitle("Java FX Test!");
-        stage.setResizable(false);
+        stage.setResizable(true);
 
 //        Each stage require a scene, each scene needs scene graph (Rectangle, UI)
 //        Java FX is like a theater, the stage is always the same, but the scene (UI, color) can be different

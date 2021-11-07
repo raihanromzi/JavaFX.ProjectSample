@@ -10,11 +10,12 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<!-- Layout : GridPane -->
+<!-- Layout 1 : GridPane -->
+<!--
 <GridPane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="16" vgap="24"
           gridLinesVisible="true">
-
+-->
 <!-- FXML UI CONTROL -->
 <!-- FXML force us to separate out UI from logic and data   -->
 
@@ -28,24 +29,24 @@
 
 <!-- 2 : Button -->
     <!-- Constraints   -->
-
+<!--
     <columnConstraints>
-        <!-- Column 1-->
+        Column 1
         <ColumnConstraints percentWidth="20.0"/>
-        <!-- Column 2 -->
+        Column 2
         <ColumnConstraints percentWidth="20.0"/>
     </columnConstraints>
 
     <rowConstraints>
-        <!-- Row 1-->
+        Row 1
         <RowConstraints percentHeight="20.0"/>
 
-        <!-- Row 2-->
+        Row 2
         <RowConstraints percentHeight="20.0"/>
     </rowConstraints>
-
+-->
     <!-- Button row : column-->
-
+<!--
     <Button text="Button r0 : c0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
     <Button text="Button r0 : c1" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
     <Button text="Button r0 : c2" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
@@ -57,15 +58,137 @@
     <Button text="Button r1 : c2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
     <Button text="Button r1 : c3" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
     <Button text="Button r1 : c4" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
-
+-->
     <!-- 3 : Padding -->
+<!--
     <padding>
-        <!-- Padding between top stage to element -->
+         Padding between top stage to element
         <Insets top="50"/>
     </padding>
+-->
 
-</GridPane>
+<!--</GridPane>-->
+
+
+
+
 
 <!-- Layout 2 : HBox Layout -->
+<?import javafx.scene.layout.HBox?>
+<!--Use in dialog situation, add HBox as child of another layout (VBox)-->
+<!--
+<HBox fx:controller="com.javafxproject.HelloController"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="BOTTOM_RIGHT"
+      style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"
+      spacing="10">
+
+    <padding>
+        <Insets bottom="10" right="10"/>
+    </padding>
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3"/>
+
+</HBox>
+-->
+
+<!-- Layout 3 : BorderPane Layout -->
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:controller="com.javafxproject.HelloController"
+            xmlns:fx="http://javafx.com/fxml">
+
+<!-- Tell the borderPane layout to bottom-->
+<!--  Each position only have 1 child  -->
+    <padding>
+        <Insets bottom="32" top="32" left="32" right="32"/>
+    </padding>
+    <bottom>
+
+        <HBox spacing="10" alignment="BOTTOM_CENTER">
+
+            <padding>
+                <Insets bottom="32"/>
+            </padding>
+
+            <Button text="Button 1" prefWidth="90"/>
+            <Button text="Button 2" prefWidth="90"/>
+            <Button text="Button 3" prefWidth="90"/>
+
+        </HBox>
+
+    </bottom>
+
+    <top>
+        <Label text="TOP"
+               textFill="red"
+               alignment="TOP_CENTER"
+               BorderPane.alignment="TOP_CENTER">
+
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </top>
+
+    <left>
+        <Label text="LEFT"
+               textFill="red"
+               BorderPane.alignment="TOP_CENTER">
+
+            <font>
+                <Font name="SF Compact Display BOLD" size="32"/>
+            </font>
+        </Label>
+    </left>
+
+    <right>
+        <Label text="RIGHT"
+               textFill="red"
+               BorderPane.alignment="TOP_CENTER">
+
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </right>
+
+    <center>
+        <Label text="CENTER"
+               textFill="red"
+               BorderPane.alignment="CENTER">
+
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </center>
+
+</BorderPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
