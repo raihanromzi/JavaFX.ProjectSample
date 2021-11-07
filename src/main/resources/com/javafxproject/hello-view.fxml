@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.RowConstraints?>
 
+
 <!-- Layout 1 : GridPane -->
 <!--
 <GridPane fx:controller="com.javafxproject.HelloController"
@@ -27,8 +28,9 @@
 <!--        </font>-->
 <!--    </Label>-->
 
+
 <!-- 2 : Button -->
-    <!-- Constraints   -->
+<!-- Constraints   -->
 <!--
     <columnConstraints>
         Column 1
@@ -70,9 +72,6 @@
 <!--</GridPane>-->
 
 
-
-
-
 <!-- Layout 2 : HBox Layout -->
 <?import javafx.scene.layout.HBox?>
 <!--Use in dialog situation, add HBox as child of another layout (VBox)-->
@@ -86,6 +85,7 @@
     <padding>
         <Insets bottom="10" right="10"/>
     </padding>
+
     <Button text="Button 1" prefWidth="90"/>
     <Button text="Button 2" prefWidth="90"/>
     <Button text="Button 3"/>
@@ -93,14 +93,16 @@
 </HBox>
 -->
 
+
 <!-- Layout 3 : BorderPane Layout -->
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane fx:controller="com.javafxproject.HelloController"
-            xmlns:fx="http://javafx.com/fxml">
+<!--<BorderPane fx:controller="com.javafxproject.HelloController"-->
+<!--            xmlns:fx="http://javafx.com/fxml">-->
 
 <!-- Tell the borderPane layout to bottom-->
 <!--  Each position only have 1 child  -->
+<!--
     <padding>
         <Insets bottom="32" top="32" left="32" right="32"/>
     </padding>
@@ -166,6 +168,98 @@
     </center>
 
 </BorderPane>
+-->
+
+
+<!-- Layout 4 : FlowPane Layout -->
+<!-- Automatically Responsive when user decrease the stage window, from horizontal to vertical -->
+<?import javafx.scene.layout.FlowPane?>
+<!--
+<FlowPane fx:controller="com.javafxproject.HelloController"
+          xmlns:fx="http://javafx.com/fxml"
+          orientation="HORIZONTAL"
+          hgap="16"
+          vgap="16"
+          alignment="CENTER">
+
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3" prefWidth="90"/>
+    <Button text="Button 4" prefWidth="90"/>
+    <Button text="Button 5" prefWidth="90"/>
+    <Button text="Button 6" prefWidth="90"/>
+    <Button text="Button 7" prefWidth="90"/>
+    <Button text="Button 8" prefWidth="90"/>
+    <Button text="Button 9" prefWidth="90"/>
+    <Button text="Button 10" prefWidth="90"/>
+
+</FlowPane>
+-->
+
+
+<!-- Layout 5 : VBox Layout -->
+<!-- Not Responsive like FlowPane -->
+<!-- Use VBox or HBox if you have exact element -->
+<!--
+<VBox fx:controller="com.javafxproject.HelloController"
+      xmlns:fx="http://javafx.com/fxml">
+
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3" prefWidth="90"/>
+    <Button text="Button 4" prefWidth="90"/>
+    <Button text="Button 5" prefWidth="90"/>
+    <Button text="Button 6" prefWidth="90"/>
+    <Button text="Button 7" prefWidth="90"/>
+    <Button text="Button 8" prefWidth="90"/>
+    <Button text="Button 9" prefWidth="90"/>
+    <Button text="Button 10" prefWidth="90"/>
+
+</VBox>
+-->
+
+
+<!-- Layout 6 : TilePane Layout -->
+<!-- Combine GridPane and FlowPane-->
+<!--
+<?import javafx.scene.layout.TilePane?>
+<TilePane fx:controller="com.javafxproject.HelloController"
+          xmlns:fx="http://javafx.com/fxml"
+          hgap="24"
+          vgap="24">
+
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3" prefWidth="90"/>
+    <Button text="Button 4" prefWidth="90"/>
+    <Button text="Button 5" prefWidth="90"/>
+    <Button text="Button 6" prefWidth="90"/>
+    <Button text="Button 7" prefWidth="90"/>
+    <Button text="Button 8" prefWidth="90"/>
+    <Button text="Button 9" prefWidth="90"/>
+    <Button text="Button 10" prefWidth="90"/>
+
+</TilePane>
+-->
+
+
+<!-- Layout 7 : Stack Layout -->
+<!-- Adding Child to Stack -->
+<!-- Last child will be First on stack-->
+
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:controller="com.javafxproject.HelloController"
+           xmlns:fx="http://javafx.com/fxml">
+
+    <Label text="Label Text" />
+    <Button text="Button 1" prefWidth="90" style="-fx-background-color: red"/>
+    <Label text="Label Text" />
+
+</StackPane>
+
+
+
+
 
 
 
