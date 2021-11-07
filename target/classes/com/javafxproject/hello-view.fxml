@@ -9,8 +9,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.RowConstraints?>
-
-<!-- Layout : GridPane -->
 <GridPane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml" alignment="TOP_CENTER" hgap="16" vgap="24"
           gridLinesVisible="true">
@@ -28,7 +26,6 @@
 
 <!-- 2 : Button -->
     <!-- Constraints   -->
-
     <columnConstraints>
         <!-- Column 1-->
         <ColumnConstraints percentWidth="20.0"/>
@@ -45,7 +42,6 @@
     </rowConstraints>
 
     <!-- Button row : column-->
-
     <Button text="Button r0 : c0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
     <Button text="Button r0 : c1" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
     <Button text="Button r0 : c2" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
@@ -65,7 +61,4 @@
     </padding>
 
 </GridPane>
-
-<!-- Layout 2 : HBox Layout -->
-
 
