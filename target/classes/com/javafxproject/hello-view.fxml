@@ -10,28 +10,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<!-- Layout 2 : HBox Layout -->
-<?import javafx.scene.layout.HBox?>
-<!--Use in dialog situation, add HBox as child of another layout (VBox)-->
-<!--
-<HBox fx:controller="com.javafxproject.HelloController"
-      xmlns:fx="http://javafx.com/fxml"
-      alignment="BOTTOM_RIGHT"
-      style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed"
-      spacing="10">
-
-    <padding>
-        <Insets bottom="10" right="10"/>
-    </padding>
-
-    <Button text="Button 1" prefWidth="90"/>
-    <Button text="Button 2" prefWidth="90"/>
-    <Button text="Button 3"/>
-
-</HBox>
--->
-
-
 <!-- Layout 3 : BorderPane Layout -->
 <?import javafx.scene.layout.BorderPane?>
 

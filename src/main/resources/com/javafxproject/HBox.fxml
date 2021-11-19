@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Layout 2 : HBox Layout -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<HBox fx:controller="com.javafxproject.HelloController"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="TOP_CENTER"
+      style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"
+      spacing="16">
+
+    <padding>
+        <Insets bottom="16" top="16"/>
+    </padding>
+
+    <!--Same size button using prefWidth & prefHeight-->
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3" prefWidth="200" prefHeight="200"/>
+
+</HBox>

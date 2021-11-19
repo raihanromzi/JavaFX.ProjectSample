@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Layout 1 : GridPane -->
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
+
 <GridPane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml"
           alignment="TOP_CENTER"
@@ -15,47 +15,44 @@
 <!-- FXML UI CONTROL -->
 <!-- FXML force us to separate out UI from logic and data   -->
 
-<!-- 1 : Text -->
-<!--    <Label text="This is Text Label" textFill="blue">-->
-<!--        <font>-->
-<!--            <Font name="SF Compact Display BOLD" size="32">-->
-<!--            </Font>-->
-<!--        </font>-->
-<!--    </Label>-->
+    <!-- 1 : Text -->
+    <Label text="This is Text Label (Header)" textFill="blue" GridPane.columnSpan="4" GridPane.halignment="CENTER">
+        <font>
+            <Font name="SF Compact Display BOLD" size="32">
+            </Font>
+        </font>
+    </Label>
 
-
-<!-- 2 : Button -->
+    <!-- 2 : Button -->
 <!-- Constraints   -->
-<!--    <columnConstraints>-->
-<!--        <ColumnConstraints percentWidth="20.0"/>-->
-<!--        <ColumnConstraints percentWidth="20.0"/>-->
-<!--    </columnConstraints>-->
+    <columnConstraints>
+        <!-- Column 1    -->
+        <!-- <ColumnConstraints percentWidth="50.0"/>-->
+        <!-- Column 2    -->
+        <!--<ColumnConstraints percentWidth="10.0"/>-->
+    </columnConstraints>
 
-<!--    <rowConstraints>-->
-<!--        <RowConstraints percentHeight="20.0"/>-->
-<!--        <RowConstraints percentHeight="20.0"/>-->
-<!--    </rowConstraints>-->
-
-<!-- Button row : column-->
-
-    <Button text="Button r0 : c0" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
-    <Button text="Button r0 : c1" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
-    <Button text="Button r0 : c2" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
-    <Button text="Button r0 : c3" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
-    <Button text="Button r0 : c4" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
-
-    <Button text="Button r1 : c0" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
-    <Button text="Button r1 : c1" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
-    <Button text="Button r1 : c2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
-    <Button text="Button r1 : c3" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
-    <Button text="Button r1 : c4" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+    <rowConstraints>
+        <!-- Row 1 -->
+        <!-- <RowConstraints percentHeight="50.0"/>-->
+    </rowConstraints>
 
 <!-- 3 : Padding -->
+    <padding>
+    <!--Padding between top stage to element-->
+        <Insets top="50"/>
+    </padding>
 
-<!--    <padding>-->
-<!--         Padding between top stage to element-->
-<!--        <Insets top="50"/>-->
-<!--    </padding>-->
+    <!-- Button row : column-->
 
+    <Button text="Button r1 : c0" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER"/>
+    <Button text="Button r1 : c1" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+    <Button text="Button r1 : c2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <Button text="Button r1 : c3" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+    <Button text="Button r2 : c0" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <Button text="Button r2 : c1" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Button text="Button r2 : c2" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    <Button text="Button r2 : c3" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
 
 </GridPane>
