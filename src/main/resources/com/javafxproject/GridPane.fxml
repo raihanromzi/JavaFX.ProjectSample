@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- Layout 1 : GridPane -->
+
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
 <GridPane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml"
           alignment="TOP_CENTER"

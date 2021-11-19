@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Layout 3 : BorderPane Layout -->
+
+<!-- Tell the borderPane layout to bottom-->
+<!--  Each position only have 1 child  -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:controller="com.javafxproject.HelloController"
+            xmlns:fx="http://javafx.com/fxml">
+    <!--Global Padding-->
+    <padding>
+        <Insets bottom="10" top="10" left="10" right="10"/>
+    </padding>
+
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_CENTER">
+            <Button text="Button 1" prefWidth="90"/>
+            <Button text="Button 2" prefWidth="90"/>
+            <Button text="Button 3" prefWidth="90"/>
+        </HBox>
+    </bottom>
+
+    <top>
+        <Label text="TOP"
+               textFill="red"
+               alignment="TOP_CENTER"
+               BorderPane.alignment="TOP_CENTER">
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </top>
+
+    <left>
+        <Label text="LEFT"
+               textFill="red"
+               BorderPane.alignment="TOP_CENTER">
+            <font>
+                <Font name="SF Compact Display BOLD" size="32"/>
+            </font>
+        </Label>
+    </left>
+
+    <right>
+        <Label text="RIGHT"
+               textFill="red"
+               BorderPane.alignment="TOP_CENTER">
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </right>
+
+    <center>
+        <Label text="CENTER"
+               textFill="red"
+               BorderPane.alignment="CENTER">
+            <font>
+                <Font name="SF Compact Display BOLD" size="24"/>
+            </font>
+        </Label>
+    </center>
+</BorderPane>

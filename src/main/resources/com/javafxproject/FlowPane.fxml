@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Layout 4 : FlowPane Layout -->
+<!-- Automatically Responsive when user decrease the stage window, from horizontal to vertical -->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<FlowPane fx:controller="com.javafxproject.HelloController"
+          xmlns:fx="http://javafx.com/fxml"
+          orientation="VERTICAL"
+          hgap="16"
+          vgap="16"
+          alignment="BASELINE_LEFT">
+
+    <Button text="Button 1" prefWidth="90"/>
+    <Button text="Button 2" prefWidth="90"/>
+    <Button text="Button 3" prefWidth="90"/>
+    <Button text="Button 4" prefWidth="90"/>
+    <Button text="Button 5" prefWidth="90"/>
+    <Button text="Button 6" prefWidth="90"/>
+    <Button text="Button 7" prefWidth="90"/>
+    <Button text="Button 8" prefWidth="90"/>
+    <Button text="Button 9" prefWidth="90"/>
+    <Button text="Button 10" prefWidth="90"/>
+
+</FlowPane>
+
