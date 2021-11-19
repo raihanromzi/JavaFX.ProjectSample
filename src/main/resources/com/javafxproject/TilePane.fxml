@@ -8,7 +8,8 @@
 <TilePane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml"
           hgap="24"
-          vgap="24">
+          vgap="24"
+          alignment="BOTTOM_RIGHT">
 
     <Button text="Button 1" prefWidth="90"/>
     <Button text="Button 2" prefWidth="90"/>

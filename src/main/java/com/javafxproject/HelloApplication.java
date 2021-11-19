@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
 
 //        Load the UI from fxml
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("TilePane.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Main.fxml")));
 
 
     /*

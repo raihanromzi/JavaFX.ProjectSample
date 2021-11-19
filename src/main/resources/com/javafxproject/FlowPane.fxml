@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.FlowPane?>
 <FlowPane fx:controller="com.javafxproject.HelloController"
           xmlns:fx="http://javafx.com/fxml"
-          orientation="VERTICAL"
+          orientation="HORIZONTAL"
           hgap="16"
           vgap="16"
-          alignment="BASELINE_LEFT">
+          alignment="CENTER">
 
     <Button text="Button 1" prefWidth="90"/>
     <Button text="Button 2" prefWidth="90"/>
