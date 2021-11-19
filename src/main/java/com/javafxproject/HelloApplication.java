@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
 
 //        Load the UI from fxml
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("GridPane.fxml")));
 
 
     /*
@@ -55,7 +55,7 @@ public class HelloApplication extends Application {
     */
 
 //        Initialize the scene
-        Scene scene = new Scene(root, 550, 240, Color.WHITESMOKE);
+        Scene scene = new Scene(root, 700, 275, Color.WHITESMOKE);
 
 //        Set Stage
         stage.setTitle("Java FX Test!");
